@@ -223,16 +223,3 @@ Chat history is saved in the session state and can be exported as a CSV with the
 
 ---
 
-## 🧠 New to this Project?
-
-Start from the basics:
-👉 [Version 1 - rag-bot-basic](https://github.com/Zlash65/rag-bot-basic)
-
-Understand modular design:
-👉 [Version 2 - rag-bot-chroma](https://github.com/Zlash65/rag-bot-chroma)
-
-Then return here for real-world patterns.
-
----
-
-Happy building! 🛠️
