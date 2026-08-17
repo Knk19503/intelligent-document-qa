@@ -1,30 +1,13 @@
-# 👽 RAG PDFBot - V3 (FastAPI + Streamlit)
-
-This is the **production-ready refactor** of [rag-bot-chroma](https://github.com/Zlash65/rag-bot-chroma), introducing a real separation between frontend (UI) and backend (logic) using **Streamlit** and **FastAPI** respectively. This modular architecture helps in scaling, extending, and deploying the bot in real-world environments.
-
----
-
 # 📄 Intelligent Document QA — RAG Chatbot (FastAPI + Streamlit)
 
-An end-to-end Retrieval-Augmented Generation (RAG) chatbot that lets users upload PDF documents and ask natural-language questions about their content. Built with a decoupled architecture — Streamlit handles the frontend UI, while FastAPI powers the backend logic — making the system modular, scalable, and easy to extend with new LLMs or tools.
+An end-to-end Retrieval-Augmented Generation (RAG) chatbot that lets users 
+upload PDF documents and ask natural-language questions about their content.
+Built with a decoupled architecture — Streamlit for the frontend, FastAPI 
+for the backend — so the system is modular and easy to extend with new 
+LLMs or retrieval strategies.
 
----
-
-## 🔄 What Changed from `rag-bot-chroma`
-
-| Feature | Version 2 | Version 3 |
-|--------|-------------|--------------|
-| Codebase | One Streamlit app | Split into `client/` + `server/` |
-| PDF Upload | In Streamlit | Async FastAPI API |
-| Chat | In Streamlit | Calls `/chat` API |
-| Vectorstore | In UI | Controlled by backend |
-| Model Options | Static | Dynamically fetched |
-| Inspector | In sidebar | Main panel toggle |
-| Splitting | `RecursiveTextSplitter` | `TokenTextSplitter` |
-| UX | Crude | Responsive, clear, downloadable |
-| Extendability | Hard | Easy to plug new LLMs, tools |
-
----
+Built on top of an open-source RAG starter by [Zlash65](https://github.com/Zlash65/rag-bot-fastapi), 
+which I extended and adapted while learning RAG architecture.
 
 ## 🧪 How It Looks
 
@@ -72,8 +55,8 @@ An end-to-end Retrieval-Augmented Generation (RAG) chatbot that lets users uploa
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/Zlash65/rag-bot-fastapi.git
-cd rag-bot-fastapi
+git clone https://github.com/Knk19503/intelligent-document-qa.git
+cd intelligent-document-qa
 ```
 
 Setup Virtual Environment:
@@ -217,14 +200,10 @@ Chat history is saved in the session state and can be exported as a CSV with the
 ---
 
 <details>
-  <summary>🙏 Acknowledgements</summary>
-
-- [LangChain](https://www.langchain.com/)
-- [Streamlit](https://streamlit.io/)
-- [Groq](https://console.groq.com/)
-- [Google Gemini](https://ai.google.dev/)
-- [Chroma](https://docs.trychroma.com/)
-
+  ## 🙏 Acknowledgements
+This project is based on an open-source RAG starter template by Zlash65. 
+I used it to learn RAG architecture end-to-end and extended it with [list 
+what you actually changed — see Step 6].
 </details>
 
 ---

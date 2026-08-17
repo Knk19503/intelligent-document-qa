@@ -10,6 +10,10 @@ from utils.logger import logger
 app = FastAPI(title="RAG PDFBot", description="Chat with multiple PDFs :books:")
 app.include_router(router)
 
+@app.get("/health")
+def health_check():
+    return {"status": "ok", "message": "RAG backend is running"}
+
 @app.on_event("startup")
 async def startup_event():
   logger.info("Starting up app...")

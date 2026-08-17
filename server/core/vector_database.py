@@ -1,4 +1,5 @@
 import os
+import functools
 
 from typing import List
 from fastapi import UploadFile
@@ -18,6 +19,7 @@ def vectorstore_exists(persist_path: str) -> bool:
   logger.debug(f"Vectorstore exists at {persist_path}: {exists}")
   return exists
 
+@functools.lru_cache(maxsize=None)
 def get_embeddings(model_provider: str):
   logger.debug(f"Getting embeddings for provider: {model_provider}")
   if model_provider == "groq":
