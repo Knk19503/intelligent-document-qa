@@ -4,19 +4,9 @@ This is the **production-ready refactor** of [rag-bot-chroma](https://github.com
 
 ---
 
-<details>
-  <summary> 🔗 Helpful Links </summary>
+# 📄 Intelligent Document QA — RAG Chatbot (FastAPI + Streamlit)
 
-- 🧑‍💻 [Version 1 - Basic RAG PDFBot (FAISS)](https://github.com/Zlash65/rag-bot-basic)
-- ✍️ [V1 Blog Walkthrough](https://dev.to/zlash65/building-a-rag-powered-pdf-chatbot-with-langchain-streamlit-and-faiss-9i9)
-
-- 🧑‍💻 [Version 2 - Modular Streamlit + Chroma](https://github.com/Zlash65/rag-bot-chroma)
-- ✍️ [V2 Blog Walkthrough](https://dev.to/zlash65/refactoring-rag-pdfbot-modular-design-with-langchain-streamlit-and-chromadb-41fn)
-
-- 🧑‍💻 [Version 3 - Streamlit + FastAPI](https://github.com/Zlash65/rag-bot-fastapi)
-- ✍️ [V3 Blog Walkthrough](https://dev.to/zlash65/rag-pdfbot-v3-from-prototype-to-production-ready-ish-58h7)
-
-</details>
+An end-to-end Retrieval-Augmented Generation (RAG) chatbot that lets users upload PDF documents and ask natural-language questions about their content. Built with a decoupled architecture — Streamlit handles the frontend UI, while FastAPI powers the backend logic — making the system modular, scalable, and easy to extend with new LLMs or tools.
 
 ---
 
