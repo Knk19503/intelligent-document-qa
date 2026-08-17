@@ -1,9 +1,3 @@
-# 👽 RAG PDFBot - V3 (FastAPI + Streamlit)
-
-This is the **production-ready refactor** of [rag-bot-chroma](https://github.com/Zlash65/rag-bot-chroma), introducing a real separation between frontend (UI) and backend (logic) using **Streamlit** and **FastAPI** respectively. This modular architecture helps in scaling, extending, and deploying the bot in real-world environments.
-
----
-
 # 📄 Intelligent Document QA — RAG Chatbot (FastAPI + Streamlit)
 
 An end-to-end Retrieval-Augmented Generation (RAG) chatbot that lets users upload PDF documents and ask natural-language questions about their content. Built with a decoupled architecture — Streamlit handles the frontend UI, while FastAPI powers the backend logic — making the system modular, scalable, and easy to extend with new LLMs or tools.
